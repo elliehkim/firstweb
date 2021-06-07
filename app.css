@@ -1,0 +1,366 @@
+@import "reset.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.navbar {
+  background-color: #b5838d;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-right: 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-right: 30px;
+}
+a:hover {
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.namecard {
+  margin: 0 auto;
+  width: 500px;
+  height: 310px;
+  border: 3px solid #6d6875;
+  box-shadow: 10px 10px #6d6875;
+}
+
+.namecard ul li {
+  font: initial;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.namecard .name {
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+}
+
+li img {
+  float: left;
+  width: 30px;
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.home {
+  font-family: "Limelight", cursive;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-text {
+  display: block;
+  margin: 50px;
+}
+
+span {
+  color: #b5838d;
+}
+
+.userinput {
+  font: inherit;
+  background: none;
+  color: black;
+  border-style: hidden;
+  border-bottom: 3px solid black;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.userinput::placeholder {
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+p {
+  font: initial;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 50px;
+}
+
+.like {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.likebox {
+  text-align: center;
+  width: 650px;
+  height: 450px;
+  margin: 60px 0px;
+  border: 3px solid #6d6875;
+  box-shadow: 10px 10px #6d6875;
+}
+
+.like img {
+  width: 300px;
+  z-index: 1;
+}
+
+#label1 {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  position: relative;
+}
+#label2 {
+  position: absolute;
+  margin: 10px;
+  top: 0;
+  left: 0;
+}
+
+input[type="radio"] {
+  margin: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background-clip: content-box;
+  border: 4px solid #767478;
+  border-radius: 50%;
+  content: " ";
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.likebox input[type="radio"]:active {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #767478;
+  border-radius: 50%;
+}
+
+.likebox input[type="radio"]:checked {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #b5838d;
+  border-radius: 50%;
+}
+
+.about {
+  font-family: "Limelight", cursive;
+  text-align: center;
+}
+
+.aboutme {
+  margin: 50px 150px;
+  font: initial;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.contact {
+  background-color: #b5838d;
+}
+
+.contact-form {
+  font-family: "Limelight", cursive;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.contact-title {
+  padding-top: 40px;
+}
+.contact input[type="text"],
+.contact input[type="email"] {
+  width: 70%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.contact textarea {
+  width: 70%;
+  height: 150px;
+  margin-top: 10px;
+  resize: none;
+}
+
+button {
+  width: 72%;
+  height: 50px;
+  background-color: #767478;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0.5px solid white;
+  color: white;
+}
+
+.contact img {
+  max-width: 50px;
+  margin: 30px 15px;
+}
+
+footer {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footertext {
+  padding: 5px;
+}
+
+.greeting,
+.form {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  ul {
+    justify-content: space-evenly;
+  }
+
+  .main {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+.aboutme {
+  margin: 0 50px;
+}
+li {
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  li a {
+    margin: 0;
+  }
+
+  .main {
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  h2,
+  .userinput {
+    font-size: 30px;
+  }
+  .namecard {
+    width: 400px;
+    height: 280px;
+  }
+  li img {
+    width: 20px;
+  }
+
+  .namecard ul li {
+    font-size: 16px;
+  }
+
+  .aboutme {
+    margin: 20px 50px;
+  }
+  li {
+    padding: 10px;
+  }
+  p {
+    font-size: 15px;
+    margin: 30px;
+  }
+
+  .likebox {
+    width: 450px;
+    height: 400px;
+  }
+
+  .likebox img {
+    margin-top: 30px;
+    width: 200px;
+  }
+
+  input[type="radio"] {
+    margin: 0 10px;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 400px;
+    height: 500px;
+  }
+  .contact textarea {
+    height: 100px;
+  }
+  .contact img {
+    width: 35px;
+    margin: 20px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
